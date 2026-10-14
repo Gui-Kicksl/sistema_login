@@ -1,0 +1,155 @@
+/* estilo.css - Estilos para o sistema de login */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121418;
+    color: #e4e6eb;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #1e2128;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container.full {
+    max-width: 500px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #f0f2f5;
+    font-size: 1.5em;
+}
+
+p {
+    color: #b0b3b8;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #d0d3d8;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #3a3f4b;
+    background: #2a2e37;
+    color: #e4e6eb;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4da3ff;
+    outline: none;
+}
+
+button {
+    background: #2d7ff9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1a64d6;
+}
+
+a {
+    color: #4da3ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logout {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Cores específicas por página */
+.container.login h2 {
+    color: #62a0ea;
+}
+
+.container.painel h2 {
+    color: #57e389;
+}
+
+.container.error h2 {
+    color: #ff7b72;
+}
+
+.container.perfil h2 {
+    color: #f6d32d;
+}
+
+.nivel {
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.nivel.admin {
+    background: #3d3416;
+    color: #f6d32d;
+}
+
+.nivel.comum {
+    background: #1c2b3d;
+    color: #62a0ea;
+}
+
+.data-login {
+    font-size: 0.9em;
+    color: #8a8d93;
+}
+
+.dados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.dados th,
+.dados td {
+    padding: 10px;
+    border-bottom: 1px solid #3a3f4b;
+}
+
+.dados th {
+    color: #b0b3b8;
+    width: 35%;
+}
